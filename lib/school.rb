@@ -6,7 +6,6 @@ class School
   def roster
     @roster
   end
-  
   def add_student(name, grade)
     @name = name
     if @roster[grade]
@@ -20,7 +19,6 @@ class School
     @roster[grade]
   end
   def sort
-    @roster.each {|vey, value| value.sort!}
+    @roster.each {|key, value| value.sort!}
   end
-  
 end
